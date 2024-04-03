@@ -213,27 +213,64 @@
 
         <section id="footer">
             <div class="inner">
-                <h2 class="major">Get in touch &mdash; UNDER CONSTRUCTION!</h2>
+                <h2 class="major">Get in touch</h2>
+                <p id="form-success-message">
+                    Your message has been sent. Thank you!
+                </p>
+                <p id="form-error-message">
+                    There was an error sending your message. Please try again
+                    later.
+                </p>
                 <form method="post">
                     <div class="fields">
                         <div class="field">
                             <label for="name">Name</label>
                             <input type="text" name="name" id="name" />
+                            <small id="name-error" class="error">
+                                <i
+                                    class="icon solid fa-triangle-exclamation"
+                                ></i
+                                ><span>Please provide a name</span>
+                            </small>
                         </div>
                         <div class="field">
                             <label for="email">Email</label>
-                            <input type="email" name="email" id="email" />
+                            <input type="text" name="email" id="email" />
+                            <small id="email-error" class="error">
+                                <i
+                                    class="icon solid fa-triangle-exclamation"
+                                ></i
+                                ><span>
+                                    Please provide a properly formatted email
+                                    address
+                                </span>
+                            </small>
                         </div>
                         <div class="field">
                             <label for="message">Message</label>
                             <textarea
                                 name="message"
                                 id="message"
-                                rows="4"
+                                rows="6"
                             ></textarea>
+                            <div>
+                                <small id="message-error" class="error">
+                                    <i
+                                        class="icon solid fa-triangle-exclamation"
+                                    ></i
+                                    ><span>Please provide a message</span>
+                                </small>
+                                <small id="message-remaining-chars">
+                                    500
+                                </small>
+                            </div>
                         </div>
                     </div>
-                    <input type="submit" value="Send Message" />
+                    <input
+                        id="send-message-button"
+                        type="submit"
+                        value="Send Message"
+                    />
                 </form>
                 <ul class="contact">
                     <li class="icon solid fa-home">Salem, MA 01970</li>
