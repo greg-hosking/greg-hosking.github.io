@@ -42,10 +42,6 @@ main {
     main {
         max-width: 768px;
     }
-
-    article {
-        color: red;
-    }
 }
 
 @media (min-width: 768px) {
