@@ -136,14 +136,14 @@ article .right-col a.title img {
     transform: translateY(1px);
 }
 
-article .right-col p.desc,
+article .right-col .desc,
 article .right-col p.stack {
     color: var(--text-secondary);
     font-size: 0.9em;
     margin: 8px 0;
 }
 
-article .right-col p.desc {
+article .right-col .desc {
     line-height: 1.5em;
 }
 
